@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TAsk.NewTask"
+            >
+    <VerticalStackLayout>
+        <Frame  Margin="-18,-15,-25,10"
+                BackgroundColor="Black">
+
+            <Grid Margin="0,0,0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" TextColor="#FCF0F0" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       Text="Nova Tarefa"
+                       FontFamily="inter.ttf"
+                       Margin="15,5,0,0"
+                           x:Name="lblNomeUsuario"/>               
+            </Grid>
+        </Frame>
+
+        <Label Text="Descrição"              
+               FontAttributes="Bold"
+               TextColor="#3D008A"
+               FontSize="22"
+               Margin="0,20,0,30"
+               HorizontalOptions="Center"
+               />
+
+        <Entry Placeholder="Informe a descrição da tarefa"
+                x:Name="lblDescri"
+               HorizontalOptions="Center"
+               MaxLength="17"/>
+
+        <BoxView HeightRequest="1"
+                 WidthRequest="250"/>
+
+        <Button Margin="0,30,0,0"
+                
+                Text="Salvar" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontFamily="Robotto.ttf"
+                WidthRequest="200"
+                CornerRadius="20"
+                BackgroundColor="#0B0A0C"
+                Clicked="Button_Clicked">
+            <Button.Shadow>
+                <Shadow Brush="Gray"                              
+                        Offset="0,10"
+                        Opacity="0.9"
+                        Radius="10"/>
+            </Button.Shadow>
+        </Button>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

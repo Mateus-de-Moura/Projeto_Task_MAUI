@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TAsk.Viwes.RedefinirSenha"
+             Title="RedefinirSenha">   
+    <VerticalStackLayout >
+   
+            <Image 
+                Margin="15,15,20,20"
+                Source="esquerda.png"
+                   HeightRequest="40"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>          
+        
+        <Label Text="Redefinir senha"
+               Margin="15,0,0,100"
+               FontAttributes="Bold"
+               FontSize="18"/>
+        
+        <Label x:Name="lblinfoRequest" HorizontalOptions="Center" Text="Informe o e-mail cadastrado!" Margin="15,0,0,0"/>
+        
+            <Frame HasShadow="True" Padding="0" Margin="15,20,15,20" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+                <Entry
+                       x:Name="txtEmail"
+                       Margin="20,0,0,0" 
+                       FontSize="17"
+                       Keyboard="Email"/>
+            </Frame>
+        
+        <Grid Margin="40,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+                   Text="Não recebeu o email?"
+                   Margin="10,10,0,10"
+                   HorizontalOptions="End"
+                   BackgroundColor="White"/>
+            <Button 
+                BackgroundColor="White"
+                Grid.Column="1"
+                Text="Renviar!"
+                TextColor="Red"
+                 HorizontalOptions="Start"
+                Clicked="Button_Clicked_1"  />
+        </Grid>
+
+        <Button x:Name="btnEnviar_Confirmar"
+                Text="Enviar"                
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                WidthRequest="200"
+                Clicked="Button_Clicked">
+        </Button>
+
+        <Image Margin="0,40,0,0"
+               Source="redef1.png"
+               HeightRequest="200"
+               WidthRequest="300"/>
+    </VerticalStackLayout>    
+</ContentPage>

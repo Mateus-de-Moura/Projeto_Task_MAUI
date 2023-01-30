@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TAsk.Viwes.Registre"
+             BackgroundColor="#f7f7f7"
+             Title=""
+             >
+    <ScrollView>
+    <VerticalStackLayout>
+
+        <Grid Margin="15,15,25,15">
+            <Image Source="esquerda.png"
+                   HeightRequest="40"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+                </Image.GestureRecognizers>
+            </Image>            
+        </Grid>
+        
+        <Label 
+            Text="Registrar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Margin="25,25,0,15"
+            FontAttributes="Bold"
+            FontSize="18"
+            />
+
+        <Label Text="Nome"
+                Margin="30,10,0,15"
+               TextColor="#323232"/>
+        <Frame HasShadow="True" Padding="0" Margin="15,0,15,0" BorderColor="White" HeightRequest="40" HorizontalOptions="Fill">
+            <Entry x:Name="txtNome"
+             Margin="20,0,0,0"               
+           />
+        </Frame>
+
+        <Label Text="E-mail"
+                Margin="30,10,0,15"
+               TextColor="#323232"/>
+        <Frame HasShadow="True" Padding="0" Margin="15,0,15,0" BorderColor="White" HeightRequest="40" HorizontalOptions="Fill">
+            <Entry
+                x:Name="txtEmail"
+             Margin="30,0,0,0"
+                 Keyboard="Email"
+           />
+        </Frame>
+        
+        <Label Text="Telefone"
+                Margin="30,10,0,15"
+               TextColor="#323232"/>
+        <Frame HasShadow="True" Padding="0" Margin="15,0,15,0" BorderColor="White" HeightRequest="40" HorizontalOptions="Fill">
+            <Entry x:Name="txtTelefone"
+             Margin="30,0,0,0"
+                 Keyboard="Telephone"
+           />
+        </Frame>
+
+        <Label Text="senha"
+                Margin="30,10,0,15"
+               TextColor="#323232"/>
+        <Frame HasShadow="True" Padding="0" Margin="15,0,15,0" BorderColor="White" HeightRequest="40" HorizontalOptions="Fill">
+            <Entry
+             x:Name="txtSenha"
+             IsPassword="True"
+             Margin="30,0,0,0"              
+           />
+        </Frame>
+
+        <Button Text="Registrar"  
+                BackgroundColor="Black" 
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Margin="0,60,10,0"
+                CornerRadius="15"
+                Clicked="Button_Clicked"
+                />
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

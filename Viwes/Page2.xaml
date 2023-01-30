@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TAsk.Page2" 
+             BackgroundColor="#D9D9D9"
+             Title="Tasks">
+    <VerticalStackLayout>
+        <Label Text="Tarefas Concluídas"
+               TextColor="#3D008A"
+               FontAttributes="Bold"
+               FontFamily="Robotto.ttf"
+               FontSize="22"
+               HorizontalOptions="Center"
+               Margin="0,15,0,2"/>
+
+        <Label Text="Janeiro"
+               Margin="0,2,0,40"
+               HorizontalOptions="Center"
+                FontFamily="inter.ttf"
+               TextColor="#999999"
+               FontSize="16"/>
+
+        <Border BackgroundColor="#E4E3E3"
+                Margin="10,0,10,0"
+                 StrokeShape="RoundRectangle 5">
+            <Border.Shadow>
+                <Shadow Brush="gray"                              
+                        Offset="-30,10"
+                        Opacity="0.9"
+                        Radius="10"/>
+            </Border.Shadow>
+            
+            <Grid Margin="10,0,10,0">        
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25" />
+                    <ColumnDefinition />
+                    <ColumnDefinition/>                    
+                </Grid.ColumnDefinitions>
+
+                           
+                <!--Descriptions-->
+            <Label Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   TextColor="#3D008A"
+                   Text="Natação"
+                   FontFamily="Robotto.ttf"
+                   FontAttributes="Bold"                   
+                   FontSize="22"    
+                   Margin="10,10,0,0"
+                  />
+
+                <Image Source="ponto.svg"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       HeightRequest="10"
+                       Margin="13,-15,0,20"
+                       HorizontalOptions="Start"/>
+
+                <Image Source="traco.svg"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       HeightRequest="30"                       
+                        HorizontalOptions="Start" 
+                         Margin="16,-10,0,30"
+                       />
+
+                <Label Text="Início"
+                        Grid.Row="1"
+                       Grid.Column="1"
+                        Margin="13,-15,0,20"
+                       FontFamily="inter.ttf"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       />
+                <Label Text="11:40"
+                        Grid.Row="1"
+                       Grid.Column="2"
+                       HorizontalOptions="End"
+                        Margin="13,-15,20,20"
+                       FontFamily="inter.ttf"
+                       FontAttributes="Bold" 
+                       FontSize="16"
+                       />
+
+                <Label Text="27/01/2023"
+                       TextColor="#898989"
+                       Grid.Row="2"
+                       Grid.Column="1"                  
+                       Margin="13,-15,20,20"
+                       FontFamily="inter.ttf"
+                       HorizontalOptions="Start" 
+                       FontAttributes="Bold" 
+                       FontSize="14"
+                       />
+                
+                 <!-- Fim  -->
+
+                <Image Source="ponto.svg"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       HeightRequest="10"
+                       Margin="13,-35,0,20"
+                       HorizontalOptions="Start"/>
+
+                <Image Source="traco.svg"
+                       Grid.Row="5"
+                       Grid.Column="0"
+                       HeightRequest="30"                       
+                       HorizontalOptions="Start" 
+                       Margin="16,-7,0,30"
+                       />
+
+                <Label Text="Fim"
+                        Grid.Row="4"
+                       Grid.Column="1"
+                        Margin="13,-27,0,20"
+                       FontFamily="inter.ttf"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       />
+                <Label Text="11:40"
+                        Grid.Row="4"
+                       Grid.Column="2"
+                       HorizontalOptions="End"
+                        Margin="13,-25,20,20"
+                       FontFamily="inter.ttf"
+                       FontAttributes="Bold" 
+                       FontSize="16"
+                       />
+
+                <Label Text="27/01/2023"
+                       TextColor="#898989"
+                       Grid.Row="5"
+                       Grid.Column="1"                  
+                       Margin="13,-20,20,20"
+                       FontFamily="inter.ttf"
+                       HorizontalOptions="Start" 
+                       FontAttributes="Bold" 
+                       FontSize="14"
+                       />
+
+
+
+
+
+
+
+
+
+            </Grid>
+        </Border>
+       
+       
+
+    </VerticalStackLayout>
+</ContentPage>

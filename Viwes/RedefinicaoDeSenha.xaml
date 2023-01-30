@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TAsk.Viwes.RedefinicaoDeSenha"
+             Title="RedefinicaoDeSenha">
+    <VerticalStackLayout>
+
+        <Label Text="Informe a senha"  Margin="20,25,0,0" FontSize="16" FontAttributes="Bold"/>
+        
+        <Frame HasShadow="True" Padding="0" Margin="15,20,15,20" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry x:Name="txtSenha"
+                   Margin="20,0,0,0" 
+                   FontSize="17"
+                   IsPassword="True"/>
+        </Frame>
+
+        <Label Text="Confirmar senha"  Margin="15,15,0,0" FontSize="16" FontAttributes="Bold"/>
+
+        <Frame HasShadow="True" Padding="0" Margin="15,20,15,20" BorderColor="White" HeightRequest="45" HorizontalOptions="FillAndExpand">
+            <Entry x:Name="txtSenhaConfirm"
+                   Margin="20,0,0,0" 
+                   FontSize="17"
+                   IsPassword="True"
+                   MinimumHeightRequest="10"
+                   />
+        </Frame>
+
+        <Button x:Name="btnRedef"
+                BackgroundColor="Black"
+                Margin="15,0,15,0"
+                Text="SALVAR"
+                Clicked="btnRedef_Clicked"
+                />
+
+    </VerticalStackLayout>
+</ContentPage>
